@@ -79,6 +79,7 @@ CTinyPESPacket *CTinyTSMuxer::NewStream(int nStreamID, int nPid, u32 uStreamType
 		break;
 	case ts_pmt_stream_t::STREAM_TYPE_H265:
 		pes = new H265PESPacket(nStreamID, nPid);
+		break;
 	case ts_pmt_stream_t::STREAM_TYPE_AAC:
 		pes = new AACPESPacket(nStreamID, nPid);
 		break;
